@@ -1,0 +1,67 @@
+body {
+  color: #999;
+}
+
+.field {
+  /* position: relative; */
+  margin-top: 50px;
+  display: flex;
+  box-sizing: content-box;
+  height: 500px;
+  width: 500px;
+  background-color: rgb(223, 224, 223);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  top: 50px;
+  border-radius: 10px;
+
+}
+
+.field-cell {
+  display: block;
+  height: calc(25% - 5px);
+  width: calc(25% - 5px);
+  background-color: rgb(32, 190, 98);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+/* .active {
+  background-image: url(../img/goblin.png);
+  background-position: center;
+} */
+
+.hidden {
+  display: none;
+}
+
+.statistics {
+  padding-top: 50px;
+  display: block;
+  position: relative;
+  display: flex;
+  width: 500px;
+  box-sizing: content-box;
+  margin: auto;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, sans-serif;
+  color: black;
+}
+
+.statistics-cell {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+}
+
+.score {
+  margin-left: 5%;
+}
+
+.field:hover {
+  cursor: url(../img/hammer.png), pointer;
+}
